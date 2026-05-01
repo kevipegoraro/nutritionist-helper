@@ -1,4 +1,4 @@
-const STORAGE_KEY = 'leticiaNutriV1Data';
+const STORAGE_KEY = 'NutriV1Data';
 const fieldIds = ['paciente','consulta','nascimento','idade','sexo','peso','altura','objetivo','atividade','deficit','gorduraManual','intolerancias','alergias','preferencias','naoGosta','fome','evacuacao','alcool','sono','sabado','domingo','medicamentos','suplementos','recordatorio','infoGerais','orientacoes'];
 
 function byId(id) { return document.getElementById(id); }
