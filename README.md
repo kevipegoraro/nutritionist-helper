@@ -158,4 +158,4 @@ No installation is required.
 
 ## Author
 
-Developed as a nutritionist consultation helper project.
+Kevi Pegoraro
