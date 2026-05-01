@@ -65,7 +65,7 @@ The application uses the browser's `localStorage` to save form data locally.
 The storage key used in the JavaScript file is:
 
 ```js
-const STORAGE_KEY = 'leticiaNutriV1Data';
+const STORAGE_KEY = 'NutriV1Data';
 ```
 
 When the user types into a form field, the app automatically saves the data. When the page is opened again, the saved data is loaded back into the form.
