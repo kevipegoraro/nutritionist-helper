@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutritionist App - Help</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="help">
+  <div class="app-shell">
+    <aside class="drawer" id="drawer">
+      <div class="brand">
+        <div class="brand-mark"><img src="icon.png" alt="Nutritionist App icon"></div>
+        <div>
+          <h1 class="brand-title">Nutritionist</h1>
+          <p class="brand-subtitle">Advenced Nutri</p>
+        </div>
+      </div>
+
+      <nav class="menu-list" aria-label="Menu principal">
+        <a class="menu-btn" href="project-proposal.html"><span class="menu-icon">01</span> Project Proposal</a>
+        <a class="menu-btn" href="project-design.html"><span class="menu-icon">02</span> Project Design</a>
+        <a class="menu-btn" href="info.html"><span class="menu-icon">03</span> Info Page</a>
+        <a class="menu-btn" href="anamnese.html"><span class="menu-icon">04</span> Anamnese</a>
+        <a class="menu-btn" href="tmb.html"><span class="menu-icon">05</span> TMB / GET</a>
+        <a class="menu-btn active" href="help.html"><span class="menu-icon">06</span> Help</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuToggle" aria-label="Abrir menu">☰</button>
+        <div class="patient-chip">
+          <span class="patient-dot"></span>
+          <span id="topPatient">Patient selection - Not made yet</span>
+        </div>
+        <div class="user-pill"><span class="avatar"><img src="icon.png" alt="Nutritionist App icon"></span><span>Nutritionist App</span></div>
+      </header>
+
+      <section class="page page-nutri active" id="help">
+        <div class="container-nutri">
+          <div class="header-nutri">
+            <h2 class="title-brand">Help Page</h2>
+            <p class="subtitle">Basic instructions for using the prototype.</p>
+          </div>
+
+          <div class="card-nutri">
+            <h3 class="section-title">How to Use</h3>
+            <div class="help-list">
+              <div class="help-item"><strong>Navigate</strong><span>Use the left menu to move between proposal, design, info, anamnese, TMB, and help pages.</span></div>
+              <div class="help-item"><strong>Fill data</strong><span>Enter the patient data in the Anamnese page. The top bar and calculator update automatically.</span></div>
+              <div class="help-item"><strong>Review calculations</strong><span>Open TMB / GET to check the calculated metabolic values and adjust activity factor or planned deficit/superávit.</span></div>
+              <div class="help-item"><strong>Export</strong><span>Use “Salvar .txt” to download a text summary or “Imprimir / Salvar PDF” to use the browser print dialog.</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

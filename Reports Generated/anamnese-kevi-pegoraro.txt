@@ -1,0 +1,34 @@
+Clinical Anamnesis - Nutritionist App
+======================================
+
+Patient: Kevi Pegoraro
+Consultation date: 2026-05-01
+Date of birth: 1998-07-08
+Age: 27
+Sex: Male
+Weight: 89
+Height: 175
+Goal: Lose weight
+Intolerances: None
+Allergies: None
+Preferences: Meat
+Foods disliked: -
+Strongest hunger: Noon
+Bowel movements: -
+Alcohol: No
+Sleep: -
+Saturday habits: -
+Sunday habits: -
+Medications: Depakote
+Supplements: Creatine
+Food recall: --
+General information: Health
+
+Guidance: Exercises
+BMI: 29.1
+BMI classification: Overweight
+Body fat %: 24.9%
+LBM: 66.9 kg
+BMR: --
+TDEE: --
+DCN / TEV: --

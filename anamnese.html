@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutritionist App - Anamnese</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="anamnese">
+  <div class="app-shell">
+    <aside class="drawer" id="drawer">
+      <div class="brand">
+        <div class="brand-mark"><img src="icon.png" alt="Nutritionist App icon"></div>
+        <div>
+          <h1 class="brand-title">Nutritionist App</h1>
+          <p class="brand-subtitle">Advanced Nutrition</p>
+        </div>
+      </div>
+
+      <nav class="menu-list" aria-label="Main menu">
+        <a class="menu-btn" href="project-proposal.html"><span class="menu-icon">01</span> Project Proposal</a>
+        <a class="menu-btn" href="project-design.html"><span class="menu-icon">02</span> Project Design</a>
+        <a class="menu-btn" href="info.html"><span class="menu-icon">03</span> Info Page</a>
+        <a class="menu-btn active" href="anamnese.html"><span class="menu-icon">04</span> Anamnese</a>
+        <a class="menu-btn" href="tmb.html"><span class="menu-icon">05</span> TMB / GET</a>
+        <a class="menu-btn" href="help.html"><span class="menu-icon">06</span> Help</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuToggle" aria-label="Open menu">☰</button>
+        <div class="patient-chip">
+          <span class="patient-dot"></span>
+          <span id="topPatient">No patient selected</span>
+        </div>
+        <div class="user-pill"><span class="avatar"><img src="icon.png" alt="Nutritionist App icon"></span><span>Nutritionist App</span></div>
+      </header>
+
+      <section class="page page-nutri active" id="anamnese">
+        <div class="container-nutri">
+          <div class="header-nutri">
+            <img class="page-banner" src="banner.png" alt="Nutritionist App banner">
+            <h2 class="title-brand">Clinical History</h2>
+            <p class="subtitle">Clinical form to be completed during the consultation. The main calculations are updated automatically.</p>
+          </div>
+
+          <div class="grid-nutri">
+            <div>
+              <div class="card-nutri">
+                <h3 class="section-title">Block 1: Identification</h3>
+                <div class="form-grid">
+                  <div class="col-12"><label for="paciente">Patient</label><input id="paciente" type="text" placeholder="Patient name" /></div>
+                  <div><label for="consulta">Consultation date</label><input id="consulta" type="date" /></div>
+                  <div><label for="nascimento">Date of birth</label><input id="nascimento" type="date" /></div>
+                  <div><label for="idade">Age</label><input id="idade" type="number" min="0" max="120" placeholder="Calculated automatically" /></div>
+                  <div><label for="sexo">Biological sex</label><select id="sexo"><option value="">Select</option><option value="F">Female</option><option value="M">Male</option></select></div>
+                  <div><label for="peso">Current weight (kg)</label><input id="peso" type="number" step="0.01" min="0" placeholder="Ex.: 68.4" /></div>
+                  <div><label for="altura">Height (cm)</label><input id="altura" type="number" step="0.1" min="0" placeholder="Ex.: 165" /></div>
+                  <div><label for="objetivo">Clinical goal</label><input id="objetivo" type="text" placeholder="E.g., weight loss, muscle gain" /></div>
+                </div>
+              </div>
+
+              <div class="card-nutri">
+                <h3 class="section-title">Block 2: Eating Behavior</h3>
+                <div class="form-grid">
+                  <div><label for="intolerancias">Intolerances</label><input id="intolerancias" type="text" /></div>
+                  <div><label for="alergias">Allergies</label><input id="alergias" type="text" /></div>
+                  <div><label for="preferencias">Food preferences</label><input id="preferencias" type="text" /></div>
+                  <div><label for="naoGosta">Foods disliked</label><input id="naoGosta" type="text" /></div>
+                  <div><label for="fome">Time of day when hunger is strongest</label><input id="fome" type="text" /></div>
+                  <div><label for="evacuacao">Bowel movements</label><input id="evacuacao" type="text" /></div>
+                  <div><label for="alcool">Alcohol</label><input id="alcool" type="text" /></div>
+                  <div><label for="sono">Hours of sleep / wake-sleep schedule</label><input id="sono" type="text" /></div>
+                  <div><label for="sabado">Saturday habits</label><input id="sabado" type="text" /></div>
+                  <div><label for="domingo">Sunday habits</label><input id="domingo" type="text" /></div>
+                </div>
+              </div>
+
+              <div class="card-nutri">
+                <h3 class="section-title">Block 3: Prescriptions and Supplementation</h3>
+                <div class="form-grid">
+                  <div class="col-12"><label for="medicamentos">Medications</label><textarea id="medicamentos" placeholder="1)&#10;2)&#10;3)&#10;4)"></textarea></div>
+                  <div class="col-12"><label for="suplementos">Vitamins / supplementation</label><textarea id="suplementos" placeholder="1)&#10;2)&#10;3)&#10;4)"></textarea></div>
+                </div>
+              </div>
+
+              <div class="card-nutri">
+                <h3 class="section-title">Block 4: Consultation and Notes</h3>
+                <div class="form-grid">
+                  <div class="col-12"><label for="recordatorio">Food recall</label><textarea id="recordatorio" placeholder="Upon waking, breakfast, morning snack, lunch, snacks, dinner, supper..."></textarea></div>
+                  <div class="col-12"><label for="infoGerais">General information</label><textarea id="infoGerais"></textarea></div>
+                  <div class="col-12"><label for="orientacoes">Guidance</label><textarea id="orientacoes"></textarea></div>
+                </div>
+              </div>
+
+              <div class="actions">
+                <button class="btn btn-primary" onclick="downloadTxt()">Save .txt</button>
+                <button class="btn btn-secondary" onclick="window.print()">Print / Save PDF</button>
+                <button class="btn btn-muted" onclick="limparFormulario()">Clear form</button>
+              </div>
+            </div>
+
+            <aside class="card-nutri">
+              <h3 class="section-title">Real-Time Summary</h3>
+              <div class="metric-grid">
+                <div class="metric-box"><div class="metric-label">IMC</div><div class="metric-value" id="imcVal">--</div><div class="metric-help">Body mass index calculated from weight and height.</div><span class="pill" id="imcClass">Waiting for data</span></div>
+                <div class="metric-box"><div class="metric-label">Estimated body fat %</div><div class="metric-value" id="gorduraVal">--</div><div class="metric-help">Estimate based on BMI, age, and sex.</div></div>
+                <div class="metric-box"><div class="metric-label">Estimated LBM</div><div class="metric-value" id="mmcVal">--</div><div class="metric-help">Estimated lean body mass.</div></div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

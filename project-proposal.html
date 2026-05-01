@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutritionist App - Project Proposal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="proposal">
+  <div class="app-shell">
+    <aside class="drawer" id="drawer">
+      <div class="brand">
+        <div class="brand-mark"><img src="icon.png" alt="Nutritionist App icon"></div>
+        <div>
+          <h1 class="brand-title">Nutritionist App</h1>
+          <p class="brand-subtitle">Advanced Nutrition</p>
+        </div>
+      </div>
+
+      <nav class="menu-list" aria-label="Menu principal">
+        <a class="menu-btn active" href="project-proposal.html"><span class="menu-icon">01</span> Project Proposal</a>
+        <a class="menu-btn" href="project-design.html"><span class="menu-icon">02</span> Project Design</a>
+        <a class="menu-btn" href="info.html"><span class="menu-icon">03</span> Info Page</a>
+        <a class="menu-btn" href="anamnese.html"><span class="menu-icon">04</span> Anamnese</a>
+        <a class="menu-btn" href="tmb.html"><span class="menu-icon">05</span> TMB / GET</a>
+        <a class="menu-btn" href="help.html"><span class="menu-icon">06</span> Help</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="menuToggle" aria-label="Abrir menu">☰</button>
+        <div class="patient-chip">
+          <span class="patient-dot"></span>
+          <span id="topPatient">Kevi Pegoraro</span>
+        </div>
+        <div class="user-pill"><span class="avatar"><img src="icon.png" alt="Nutritionist App icon"></span><span>Nutritionist App</span></div>
+      </header>
+
+      <section class="page page-nutri active" id="proposal">
+        <div class="container-nutri">
+          <div class="header-nutri">
+            <h2 class="title-brand">Project Proposal</h2>
+            <p class="subtitle">A simple browser-based website to assist nutritionists during appointments by recording, organizing, calculating, and exporting client information.</p>
+          </div>
+
+          <div class="info-grid">
+            <article class="info-card">
+              <h3>Main Purpose</h3>
+              <p>The project supports a nutritionist during client appointments. The tool keeps the consultation data structured and reduces manual work when collecting anamnesis, anthropometric, and metabolic information.</p>
+            </article>
+            <article class="info-card">
+              <h3>User Need</h3>
+              <p>A friend who works with nutrition needs a practical way to record and manage client data efficiently during consultations.</p>
+            </article>
+            <article class="info-card">
+              <h3>Expected Result</h3>
+              <p>The final website should work locally in the browser, be easy to navigate, and export the entered information as a text file or PDF.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
